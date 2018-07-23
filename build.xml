@@ -36,7 +36,7 @@
     </target>
   <target name="deploy">
 
-        <sf:retrieve username="${sf1.username}"
+        <sf:deploy  username="${sf1.username}"
 
                      password="${sf1.password}"
 
