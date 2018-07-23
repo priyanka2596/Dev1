@@ -1,3 +1,3 @@
 public class Demo {
-//new test class
+//new test Demo class
 }
