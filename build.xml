@@ -3,7 +3,7 @@
     <property file="build.properties"/>
     <property environment="env"/>
 
- <target name="deploy">
+ <target name="deployorg">
 
         <sf:deploy username="${sf2.username}" 
 
@@ -22,6 +22,19 @@
     </target>
 
     <target name="fetchChanges">
+
+        <sf:retrieve username="${sf1.username}"
+
+                     password="${sf1.password}"
+
+                     serverurl="${sf1.serverurl}"
+
+                     retrieveTarget="src"
+
+                     unpackaged="/src/package.xml"/>
+
+    </target>
+  <target name="deploy">
 
         <sf:retrieve username="${sf1.username}"
 
