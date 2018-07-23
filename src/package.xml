@@ -43,10 +43,6 @@
         <members>*</members>
         <name>CustomSite</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>CustomTab</name>
-    </types>
-     
+       
     <version>38.0</version>
 </Package>
