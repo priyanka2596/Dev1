@@ -36,15 +36,19 @@
     </target>
   <target name="deploy">
 
-        <sf:deploy  username="${sf1.username}"
+        <sf:deploy username="${sf1.username}" 
 
-                     password="${sf1.password}"
+                     password="${sf1.password}" 
 
-                     serverurl="${sf1.serverurl}"
+                     serverurl="${sf1.serverurl}" 
 
-                     retrieveTarget="src"
+                     deployRoot="src"
 
-                     unpackaged="/src/package.xml"/>
+            ignoreWarnings="true"
+
+            singlePackage="true"
+
+            purgeOnDelete="true" />
 
     </target>
 </project>  
